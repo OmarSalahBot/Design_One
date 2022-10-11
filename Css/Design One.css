@@ -291,12 +291,18 @@ ul {
   align-items: center;
   padding-bottom: 120px;
 }
+@media (max-width: 991px) {
+  .landing .container {
+    flex-direction: column;
+  }
+}
 .landing .text {
   flex: 1;
 }
 @media (max-width: 991px) {
   .landing .text {
     text-align: center;
+    margin-top:100px;
   }
 }
 .landing .text h1 {
@@ -316,6 +322,7 @@ ul {
   color: #666;
   max-width: 500px;
 }
+
 @media (max-width: 991px) {
   .landing .text p {
     margin: 10px auto;
@@ -332,8 +339,10 @@ ul {
   animation: up-and-down 5s linear infinite;
 }
 @media (max-width: 991px) {
-  .landing .image {
-    display: none;
+  .landing .image img {
+    max-width:100%;
+    width:500px;
+    margin-bottom: 50px;
   }
 }
 .landing .go-down {
